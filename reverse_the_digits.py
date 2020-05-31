@@ -6,18 +6,19 @@ Example 2:
 Example 3:
   Input: 120     Output: 21 '''
  
- 
-  class Reverse:
-    def reverse(self, num):
-        string = str(num)
-        if '-' in string:
-            t = string.strip('-')
-            mid = t[::-1]
-            ans = int('-' + mid)
-        else:
-            mid = string[::-1]
-            ans = int(mid)
-        return ans
+  
+# Solution: 
+class Reverse:
+  def reverse(self, num):
+      string = str(num)
+      if '-' in string:
+          t = string.strip('-')
+          mid = t[::-1]
+          ans = int('-' + mid)
+      else:
+          mid = string[::-1]
+          ans = int(mid)
+      return ans
     
 obj = Reverse()
 obj.reverse(120)
