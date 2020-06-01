@@ -6,7 +6,6 @@ Input: address = "255.100.50.0"     Output: "255[.]100[.]50[.]0" '''
 
 
 # Solution: 
-
 class Defang:
     def defang(self, ip):
         ans = ''
