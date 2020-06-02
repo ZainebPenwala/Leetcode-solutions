@@ -5,7 +5,7 @@ Example 2:
 Input: address = "255.100.50.0"     Output: "255[.]100[.]50[.]0" '''
 
 
-# Solution: 
+# Solution 1: without using .replace() 
 class Defang:
     def defang(self, ip):
         ans = ''
@@ -17,3 +17,14 @@ class Defang:
 
 obj = Defang()
 obj.defang('1.1.1.1')
+
+
+# Solution 2:using .replace()
+class Replace:
+    def replace(self, ip):
+        r = ip.replace('.', '[.]')
+        return r
+        
+
+obj = Replace()
+obj.replace('1.1.1.1')
