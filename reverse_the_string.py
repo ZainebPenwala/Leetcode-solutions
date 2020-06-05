@@ -13,7 +13,7 @@ Input string may contain leading or trailing spaces. However, your reversed stri
 trailing spaces. You need to reduce multiple spaces between two words to a single space in the reversed string.'''
 
 
-# Solution:
+# Solution: using .join()
 class ReverseString:
     def revStr(self, string):
         li = string.split()
@@ -23,3 +23,17 @@ class ReverseString:
 
 obj = ReverseString()
 obj.revStr("  hello world!  ")
+
+
+# Solution 2: whitout any func use
+class ReverseString:
+    def revStr(self, string):
+        li = string.split()
+        rev = (li[:])[::-1]
+        ans = ''
+        for word in rev:
+            ans += ' ' + word
+        return ans
+
+obj = ReverseString()
+obj.revStr("a good   example")
