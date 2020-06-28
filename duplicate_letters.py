@@ -20,3 +20,4 @@ class Duplicate:
         return s1
 string_1 = Duplicate()
 string_1.remove_dulplicates('abbaca')
+
