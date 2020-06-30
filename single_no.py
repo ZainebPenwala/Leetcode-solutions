@@ -5,7 +5,6 @@ Example 2:
 Input: [4,1,2,1,2]   Output: 4 '''
 
 #Solution:
-
 class Single:
     def single_no (self,num):
         num1 = []
